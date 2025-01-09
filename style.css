@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+body{
+  color: #C1C1C1;
+  margin:  0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  background-color: #C1C1C1;
+}
+h1{
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 1.5em;
+  /* text-transform: uppercase; */
+}
+h2{
+  text-transform: uppercase;
+}
+h4{
+  font-size: .8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h6{
+  font-weight: 500;
+}
+a{
+  text-decoration: none;
+  color: #C1C1C1;
+}
+ul{
+  list-style: none;
+}
+.btn{
+  display: inline-block;
+  padding: .5em 1.5em;
+  border: solid 1px #C1C1C1;  
+  transition: all .3s ease-in;
+}
+.btn:hover, .btn:focus{
+  transform: translate(0px, -1px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.5);
+  box-shadow: 0px 10px 7px -9px rgba(0,0,0,0.5);
+  transition: all .3s ease-out; 
+}
+
+/* Hero Section */
+.hero {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+	height: 100vh;
+  width: 100%;
+	align-items: center;
+	background: #3d3d3d;
+}
+.hero-img img{
+  display: flex;
+}
+.hero-text{
+  /* padding: 0 2em 7.5em; */
+  text-align: center;
+}
+
+/* Collections Section */
+.box{
+  display: block;
+  position: relative;
+  padding: 1.3em;
+  background-color: #C1C1C1;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.box-overlay {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	border: solid 3px #fff;
+	transform: translate(8px, 8px);
+  transition: all 1s ease;
+}
+.box:last-child{
+  margin-bottom: 5.8em;
+}
+.box:hover .box-overlay,
+.box:focus .box-overlay
+{
+  transform: translate(0px, 0px) scale(0.92, 0.8);
+}
+
+@media(min-width: 576px){
+  /*  Global  */
+  h1{
+    margin-block-start: 0.33em;
+    margin-block-end: 0.33em;
+    font-size: 2.4em;
+  }
+  h4{
+    margin-block-start: 0.87em;
+    margin-block-end: 2.4em;
+  }
+  
+  /*  Hero Section  */
+  .hero{
+    background-image: none;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero-img{
+    /* padding-top: 6.5em; */
+  }
+  .hero-img img{
+    display: block;
+    width: 16em;
+    padding: 1em;
+    height: auto;
+  }
+  .hero-text{
+    padding: 0 2em;
+  }
+}
