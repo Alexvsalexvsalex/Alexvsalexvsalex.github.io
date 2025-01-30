@@ -50,6 +50,17 @@ ul{
   transition: all .3s ease-out; 
 }
 
+/* Menu section */
+.menu-section {
+	display: flex;
+  flex-direction: column;
+	height: 12vh;
+  padding-left: 5vh;
+  padding-top: 3vh;
+  width: 100%;
+	background: #3d3d3d;
+}
+
 /* Hero Section */
 .hero {
 	display: flex;
@@ -66,6 +77,22 @@ ul{
 .hero-text{
   /* padding: 0 2em 7.5em; */
   text-align: center;
+}
+.hero-paragraph{
+  display: flex;
+  flex-direction: row;
+	height: 100%;
+  width: 100%;
+  align-items: start;
+	background: #3d3d3d;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+.hero-sub-img{
+  width:128px;
+  height:128px;
+  border-radius:15%;
+  overflow:hidden;
 }
 
 /* Collections Section */
